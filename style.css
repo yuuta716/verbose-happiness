@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 400px);
+  margin: 0 auto;
+}
+
+header nav {
+  display: flex;
+  line-height: 64px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header a {
+  width: 100px;
+  display: block;
+  color: black;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+.br-sp {
+  display: none;
+}
+
+header a:hover {
+  font-weight: bold;
+}
+
+header img {
+  margin-top: 32px;
+  vertical-align: bottom;
+}
+
+.top img{
+  margin: 64px 0;
+  width: 100%;
+  flex: 1;
+}
+
+.top-1 h1 {
+  margin-top: 64px;
+}
+
+.top-1 p {
+  margin-top: 40px;
+}
+
+address {
+  margin: 32px 0;
+}
+
+section + section {
+  margin-top: 120px;
+}
+
+section {
+  text-align: center;
+  width: calc(100% - 64px);
+}
+
+.about address,p {
+  text-align: left;
+  margin-left: 200px;
+}
+
+.Works h1 {
+  margin-bottom: 64px;
+}
+
+.Works ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 0 160px;
+}
+
+.Works li {
+  width: calc((100% - 64px) / 3);
+}
+
+.Works img {
+ width: 100%;
+ height: auto;
+}
+
+.News table {
+  border-collapse: collapse;
+  margin: 0 200px;
+}
+
+section th {
+  font-weight: normal;
+}
+
+.News td {
+  text-align: left;
+  padding-left: 64px;
+}
+
+.News tr {
+  border-bottom: 1px solid black;
+}
+
+.contact h1 {
+  display: block;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.contact table {
+  margin-left: 170px;
+}
+
+section label{
+  display: flex;
+}
+
+.name {
+  padding: 0 32px;
+  width: 100px;
+  text-decoration: none;
+}
+
+.mail {
+  padding: 0 32px;
+  text-decoration: none;
+}
+
+.message {
+  padding: 0 32px;
+}
+
+button {
+  width: 160px;
+  height: 40px;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 8px auto;
+}
+
+@media (max-width:600px) {
+
+  .container {
+    overflow: hidden;
+  }
+
+  header h1{
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(30%);
+  }
+
+  header nav{
+    font-size: 15px;
+    margin: 0 auto;
+    display: flex;
+    transform: translateX(-60%);
+  }
+
+  header a {
+    margin-left: -20px;
+    margin-top: -40px;
+    margin-bottom: -90px;
+  }
+
+  header img {
+   display: flex;
+  line-height: 40px;
+  transform: translateY(80%);
+  }
+
+  .br-sp {
+    display: block;
+    text-align: center;
+  }
+
+  .top img {
+    width: 100%;
+  }
+
+  .top-1 h1 {
+    margin-top: 32px;
+    display: flex;
+    transform: translateX(48%);
+  }
+
+  .about address,p{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    transform: translateX(8%);
+  }
+
+  .about p {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .Works h1 {
+    margin-bottom: 32px;
+    display: flex;
+    transform: translateX(49%);
+  }
+
+  .Works ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0 auto;
+  }
+
+  .Works li {
+    width: calc((100% - 32px) / 1);
+  }
+
+
+  .Works img {
+    width: 520px;
+    height: auto;
+  }
+
+  .News h1 {
+    margin-bottom: 32px;
+    display: flex;
+    transform: translateX(49%);
+  }
+
+  .News tr {
+    width: 520px;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transform: translateX(-30%);
+    
+  }
+
+  .news {
+    border-top: 1px solid black;
+  }
+
+  .News td {
+    display: flex;
+    transform: translateX(-12%);
+  }
+
+  .contact h1 {
+    margin-bottom: 32px;
+    display: flex;
+    transform: translateX(45%);
+  }
+
+  .contact td {
+    text-align: left;
+    padding-left: 2px;
+  }
+
+  .contact th {
+    padding-left: 0;
+  }
+
+  .contact table {
+    margin-left: 0;
+  }
+
+  .contact input,textarea {
+    width: 500px;
+  }
+
+  .contact tr {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(8%);
+  }
+
+  button {
+    display: flex;
+    transform: translateX(10%);
+    text-align: center;
+    padding-left: 63px;
+    margin-top: 32px;
+  }
+}
+
+
+
+
+
+
+
+
